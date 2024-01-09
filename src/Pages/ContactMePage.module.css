@@ -1,0 +1,41 @@
+.contact-box form {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field {
+  width: 100%;
+  background: transparent;
+  border: var(--border);
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.contact-box .field::placeholder {
+  color: var(--text-color);
+}
+
+.contact-box textarea {
+  resize: none;
+  height: 12.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.5rem;
+  height: 3rem;
+  background: var(--main-color);
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: var(--white-color);
+  margin: 0 1rem;
+  transition: 0.5s;
+}

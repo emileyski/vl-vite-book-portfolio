@@ -1,0 +1,93 @@
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skills-content {
+  flex: 1 1 20rem;
+}
+
+.skills-content h3 {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.skills-content .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skills-content .content span {
+  flex: 1 1 6rem;
+  max-width: 6rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.skills-content .content span:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.skills-content .content span i {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.skills-content .content span img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media screen and (max-height: 768px) {
+  .skills-box {
+    gap: 1rem;
+  }
+  .skills-content h3 {
+    font-size: 1.1rem;
+  }
+  .skills-content .content span {
+    flex: 1 1 5.5rem;
+    max-width: 5.5rem;
+    height: 4rem;
+  }
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
+  .skills-content .content span img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-box {
+    gap: 1rem;
+  }
+  .skills-content h3 {
+    font-size: 1.1rem;
+  }
+  .skills-content .content span {
+    flex: 1 1 5.25rem;
+    max-width: 5.25rem;
+    height: 5rem;
+    font-size: 0.8rem;
+  }
+  .skills-content .content span i {
+    font-size: 2.25rem;
+  }
+  .skills-content .content span img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}

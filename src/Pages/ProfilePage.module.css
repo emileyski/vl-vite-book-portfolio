@@ -1,0 +1,117 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profile-page img {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 0.25rem solid var(--main-color);
+  margin-bottom: 0.8rem;
+}
+
+.profile-page h1 {
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.profile-page h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.profile-page .social-media {
+  margin: 0.6rem 0 0.8rem;
+}
+
+.profile-page .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  color: var(--main-color);
+  font-size: 1.3rem;
+  margin: 0 0.2rem;
+  transition: 0.5s;
+}
+
+.profile-page .social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.profile-page p {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.5rem;
+  height: 3rem;
+  background: var(--main-color);
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: var(--white-color);
+  margin: 0 1rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 500px) {
+  .btn-box {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .profile-page h1 {
+    font-size: 1.9rem;
+  }
+  .profile-page h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .profile-page p {
+    font-size: 1rem;
+  }
+  .profile-page .social-media a {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+  .profile-page img {
+    max-width: 150px;
+  }
+}
