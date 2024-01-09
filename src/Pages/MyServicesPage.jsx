@@ -33,21 +33,21 @@ function MyServicesPage() {
       <div className={styles["services-box"]}>
         <MysServiceItem
           title="Web Development"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quos."
-        />
-        <MysServiceItem
-          title="Web Development"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quos."
-        />
+          content="Lorem, ipsum dolor sit amet consectetur a.
 
-        <MysServiceItem
-          title="Web Development"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quos."
+          "
         />
-
         <MysServiceItem
           title="Web Development"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quos."
+          content="Lorem, ipsum dolor sit amet consectetur a."
+        />
+        <MysServiceItem
+          title="Web Development"
+          content="Lorem, ipsum dolor sit amet consectetur a."
+        />
+        <MysServiceItem
+          title="Web Development"
+          content="Lorem, ipsum dolor sit amet consectetur a."
         />
 
         <NextPrevButton />

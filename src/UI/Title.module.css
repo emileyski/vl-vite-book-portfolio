@@ -9,6 +9,18 @@
   color: var(--main-color);
 }
 
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  .title i {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.5rem;

@@ -90,6 +90,57 @@
   color: var(--white-color);
 }
 
+@media screen and (max-width: 1024px) {
+  .profile-page h1 {
+    font-size: 1.8rem;
+  }
+  .profile-page h3 {
+    font-size: 1.4rem;
+  }
+  .profile-page p {
+    font-size: 0.9rem;
+  }
+  .profile-page .social-media a {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+  .profile-page img {
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .profile-page h1 {
+    font-size: 1.6rem;
+  }
+  .profile-page h3 {
+    font-size: 1.3rem;
+  }
+  .profile-page p {
+    font-size: 0.8rem;
+  }
+  .profile-page .social-media a {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+  .profile-page img {
+    max-width: 140px;
+  }
+  .btn-box {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .btn-box {
     margin-top: 2rem;

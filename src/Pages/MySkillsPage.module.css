@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 5rem;
+  height: 4.75rem;
   border: var(--border);
   border-radius: 0.3rem;
   font-weight: 500;
@@ -49,17 +49,62 @@
   height: 2.5rem;
 }
 
-@media screen and (max-height: 768px) {
-  .skills-box {
-    gap: 1rem;
+@media screen and (max-width: 1100px) {
+  .skills-box h3 {
+    font-size: 1.2rem;
   }
-  .skills-content h3 {
-    font-size: 1.1rem;
+  .skills-box {
+    gap: 1.25rem;
   }
   .skills-content .content span {
     flex: 1 1 5.5rem;
     max-width: 5.5rem;
-    height: 4rem;
+    height: 4.5rem;
+    font-size: 0.85rem;
+  }
+  .skills-content .content span i {
+    font-size: 2.25rem;
+  }
+  .skills-content .content span img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .skills-box h3 {
+    font-size: 1.1rem;
+  }
+  .skills-box {
+    gap: 1rem;
+  }
+  .skills-content h3 {
+    font-size: 1.2rem;
+  }
+  .skills-content .content span {
+    flex: 1 1 5.25rem;
+    max-width: 5.25rem;
+    height: 4.5rem;
+    font-size: 0.85rem;
+  }
+  .skills-content .content span i {
+    font-size: 2.25rem;
+  }
+  .skills-content .content span img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .skills-box {
+    gap: 1rem;
+  }
+  .skills-content .content span {
+    flex: 1 1 5rem;
+    max-width: 5rem;
+    height: 4.25rem;
+    font-size: 0.8rem;
   }
   .skills-content .content span i {
     font-size: 2rem;
@@ -70,24 +115,37 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .skills-box {
-    gap: 1rem;
-  }
-  .skills-content h3 {
-    font-size: 1.1rem;
-  }
+@media screen and (max-width: 900px) {
   .skills-content .content span {
-    flex: 1 1 5.25rem;
-    max-width: 5.25rem;
-    height: 5rem;
-    font-size: 0.8rem;
+    flex: 1 1 4.75rem;
+    max-width: 4.75rem;
+    height: 4rem;
+    font-size: 0.75rem;
   }
   .skills-content .content span i {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
   .skills-content .content span img {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (min-height: 750px) {
+  .skills-box {
+    gap: 1.5rem;
+  }
+  .skills-content .content span {
+    flex: 1 1 6rem;
+    max-width: 6rem;
+    height: 5rem;
+    font-size: 0.9rem;
+  }
+  .skills-content .content span i {
+    font-size: 2.5rem;
+  }
+  .skills-content .content span img {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

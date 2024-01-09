@@ -39,3 +39,30 @@
   margin: 0 1rem;
   transition: 0.5s;
 }
+
+@media screen and (min-width: 350px) and (min-height: 700px) {
+  .contact-box {
+    padding: 2rem 0rem;
+  }
+  .contact-box h3 {
+    font-size: 1.5rem;
+  }
+  .contact-box p {
+    font-size: 1.1rem;
+  }
+  .contact-box form {
+    gap: 1.5rem;
+  }
+  .contact-box .field {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  .contact-box textarea {
+    height: 20rem;
+  }
+  .contact-box .btn {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
+  }
+}

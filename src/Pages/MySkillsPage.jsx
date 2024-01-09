@@ -48,7 +48,7 @@ function MySkillsPage() {
           <h3>Deployment</h3>
           <div className={styles["content"]}>
             <span>
-              <i className="bx bxl-typescript"></i>Docker
+              <i className="bx bxl-docker"></i>Docker
             </span>
             <span>
               <i className="bx bxl-kubernetes"></i>Kubernetes

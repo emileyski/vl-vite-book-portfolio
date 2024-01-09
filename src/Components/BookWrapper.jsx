@@ -13,7 +13,6 @@ const BookWrapper = () => {
 
       setTimeout(() => {
         coverRight.current.style.zIndex = -1;
-        //TODO: Uncomment the following line to scroll to the first page
         if (currentPage !== 4) {
           return;
         }
