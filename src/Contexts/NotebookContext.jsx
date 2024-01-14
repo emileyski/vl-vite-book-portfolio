@@ -46,7 +46,7 @@ function NotebookProvider({ children }) {
     }
     Array.from(Array(pagesCount - 3).keys()).forEach((pageNumber) => {
       setTimeout(() => {
-        setCurrentPageWrapper(pageNumber + 4);
+        setCurrentPageWrapper(pageNumber + 1);
       }, delay + pageNumber * 500);
     });
   };

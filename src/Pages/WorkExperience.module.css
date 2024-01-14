@@ -34,6 +34,9 @@
   margin-right: 0.4rem;
 }
 
+@media screen and (max-height: 980px) {
+}
+
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.5rem;

@@ -1,5 +1,5 @@
 import { useNotebook } from "../Contexts/NotebookContext";
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./ProfilePage.module.css";
 
 function ProfilePage() {

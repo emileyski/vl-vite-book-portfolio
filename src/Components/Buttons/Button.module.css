@@ -39,6 +39,51 @@
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 1050px) {
+  .btn {
+    width: 8.5rem;
+    height: 2.7rem;
+    font-size: 0.9rem;
+    margin: 0 0.8rem;
+  }
+  .btn.small {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin: 0 0.7rem;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .btn {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin: 0 0.7rem;
+  }
+  .btn.small {
+    width: 7rem;
+    height: 2.3rem;
+    font-size: 0.7rem;
+    margin: 0 0.6rem;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .btn {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin: 0 0.6rem;
+  }
+  .btn.small {
+    width: 6.5rem;
+    height: 2.3rem;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .btn {
     width: 8rem;

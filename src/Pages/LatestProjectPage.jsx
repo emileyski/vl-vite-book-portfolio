@@ -1,9 +1,9 @@
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./LatestProjectPage.module.css";
-import Title from "../UI/Title";
-import Button from "../UI/Buttons/Button";
+import Title from "../Components/Title";
+import Button from "../Components/Buttons/Button";
 import { useNotebook } from "../Contexts/NotebookContext";
-import PageNumber from "../UI/PageNumber";
+import PageNumber from "../Components/PageNumber";
 
 function LatestProject() {
   const { isMobile } = useNotebook();

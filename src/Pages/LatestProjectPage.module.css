@@ -53,3 +53,78 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 1050px) {
+  .portfolio-box .img-box {
+    height: 12rem;
+  }
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 1.15rem;
+  }
+  .portfolio-box .info-box p {
+    font-size: 0.95rem;
+  }
+  .portfolio-box .info-box .info-title a {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .portfolio-box .img-box {
+    height: 11rem;
+  }
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 1.1rem;
+  }
+  .portfolio-box .info-box p {
+    font-size: 0.9rem;
+  }
+  .portfolio-box .info-box .info-title a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (min-height: 700px) {
+  .portfolio-box .img-box {
+    height: 13rem;
+  }
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 1.4rem;
+  }
+  .portfolio-box .info-box p {
+    font-size: 1.1rem;
+  }
+  .portfolio-box .info-box .info-title a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 800px) {
+  .portfolio-box .img-box {
+    height: 14rem;
+  }
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 1.5rem;
+  }
+  .portfolio-box .info-box p {
+    font-size: 1.2rem;
+  }
+  .portfolio-box .info-box .info-title a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 840px) {
+  .portfolio-box .img-box {
+    height: 15rem;
+  }
+  .portfolio-box .info-box .info-title h3 {
+    font-size: 1.6rem;
+  }
+  .portfolio-box .info-box p {
+    font-size: 1.3rem;
+  }
+  .portfolio-box .info-box .info-title a {
+    font-size: 1.3rem;
+  }
+}

@@ -1,8 +1,8 @@
 import styles from "./MySkillsPage.module.css";
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
-import Title from "../UI/Title";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
+import Title from "../Components/Title";
 import { useNotebook } from "../Contexts/NotebookContext";
-import PageNumber from "../UI/PageNumber";
+import PageNumber from "../Components/PageNumber";
 
 function MySkillsPage() {
   const { isMobile } = useNotebook();
@@ -48,7 +48,7 @@ function MySkillsPage() {
           <h3>Deployment</h3>
           <div className={styles["content"]}>
             <span>
-              <i className="bx bxl-typescript"></i>Docker
+              <i className="bx bxl-docker"></i>Docker
             </span>
             <span>
               <i className="bx bxl-kubernetes"></i>Kubernetes

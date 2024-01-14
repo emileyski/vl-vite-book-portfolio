@@ -6,12 +6,12 @@
 .services-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1rem;
   justify-content: center;
 }
 
 .services-content {
-  flex: 1 1 13rem;
+  flex: 1 1 10rem;
   border: var(--border);
   border-radius: 0.5rem;
   padding: 0.6rem 0.5rem 0.8rem;
@@ -33,7 +33,56 @@
 }
 
 .services-content p {
-  margin: 0.2rem 0 0.8rem;
+  font-size: 1rem;
+  margin: 0.2rem 0 0.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .services-content {
+    padding: 0.5rem 0.4rem 0.7rem;
+  }
+  .services-content i {
+    font-size: 2.25rem;
+  }
+  .services-content h3 {
+    font-size: 1rem;
+  }
+  .services-content p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0.4rem;
+  }
+  .services-box {
+    gap: 0.75rem;
+  }
+  .services-content {
+    flex: 1 1 8rem;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .services-content {
+    padding: 0.4rem 0.3rem 0.6rem;
+  }
+  .services-content i {
+    font-size: 2rem;
+  }
+  .services-content h3 {
+    font-size: 0.9rem;
+  }
+  .services-content p {
+    font-size: 0.85rem;
+    margin: 0.2rem 0 0.35rem;
+  }
+  .services-box {
+    gap: 0.5rem;
+  }
+  .services-content {
+    flex: 1 1 4rem;
+    max-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
 }
 
 @media screen and (max-width: 768px) {
@@ -58,21 +107,54 @@
   }
 }
 
-@media screen and (max-height: 768px) {
-  .services-box {
-    gap: 0.35rem;
-  }
+@media screen and (min-width: 350px) and (min-height: 650px) {
   .services-content {
-    padding: 0.4rem 0.3rem 0.6rem;
+    padding: 0.6rem 0.25rem 0.6rem;
   }
   .services-content i {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .services-content h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .services-content p {
-    font-size: 0.75rem;
-    margin: 0.2rem 0 0.25rem;
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0.2rem;
+  }
+  .services-box {
+    gap: 0.75rem;
+  }
+  .services-content {
+    flex: 1 1 5rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (min-height: 700px) {
+  .services-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .services-content {
+    max-width: 100%;
+    padding: 0.5rem 0.3rem 0.7rem;
+  }
+  .services-content p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0.3rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 800px) {
+  .services-content i {
+    font-size: 1.9rem;
+    /* display: block; */
+  }
+  .services-content h3 {
+    font-size: 1.1rem;
+  }
+  .services-content p {
+    font-size: 1rem;
+    margin: 0.2rem 0 0.45rem;
   }
 }
