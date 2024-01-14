@@ -1,8 +1,8 @@
 import { useNotebook } from "../Contexts/NotebookContext";
-import Button from "../UI/Buttons/Button";
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
-import PageNumber from "../UI/PageNumber";
-import Title from "../UI/Title";
+import Button from "../Components/Buttons/Button";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
+import PageNumber from "../Components/PageNumber";
+import Title from "../Components/Title";
 import styles from "./MyServicesPage.module.css";
 
 function MysServiceItem({ icon = "bx bx-code-alt", title, content }) {

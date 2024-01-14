@@ -1,9 +1,9 @@
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
-import Title from "../UI/Title";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
+import Title from "../Components/Title";
 import WorkEducBox from "../Components/WorkEducBox/WorkEducBox";
 import WorkEducContent from "../Components/WorkEducContent/WorkEducContent";
 import { useNotebook } from "../Contexts/NotebookContext";
-import PageNumber from "../UI/PageNumber";
+import PageNumber from "../Components/PageNumber";
 
 function WorkExperience() {
   const { isMobile } = useNotebook();

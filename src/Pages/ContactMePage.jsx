@@ -1,7 +1,8 @@
 import GoToProfile from "../Components/GoToProfile/GoToProfile";
-import NextPrevButton from "../UI/Buttons/NextPrevButton";
-import PageNumber from "../UI/PageNumber";
-import Title from "../UI/Title";
+import NextPrevButton from "../Components/Buttons/NextPrevButton";
+
+import PageNumber from "../Components/PageNumber";
+import Title from "../Components/Title";
 import styles from "./ContactMePage.module.css";
 
 function ContactMePage() {
