@@ -1,10 +1,10 @@
 import BookWrapper from "./Components/BookWrapper";
 import { useMediaQuery } from "react-responsive";
-import { NotebookProvider } from "./Contexts/NotebookContext";
+import { NotebookProvider, useNotebook } from "./Contexts/NotebookContext";
 import Notebook from "./Components/Notebook";
 
 function App() {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const { isMobile } = useNotebook();
 
   return (
     <NotebookProvider>

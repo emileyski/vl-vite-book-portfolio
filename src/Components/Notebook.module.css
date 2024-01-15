@@ -4,6 +4,7 @@
   height: 95vh;
   perspective: 250rem;
   animation: show-animate 2s forwards;
+  overflow: hidden;
 }
 
 .cover {

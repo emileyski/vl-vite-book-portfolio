@@ -8,9 +8,29 @@ import MyServicesPage from "../Pages/MyServicesPage";
 import MySkillsPage from "../Pages/MySkillsPage";
 import LatestProjectPage from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
+import { useMediaQuery } from "react-responsive";
+import { useEffect } from "react";
 
 function Notebook() {
   const { currentPage } = useNotebook(); //default value is 1
+
+  // const isPortrait = useMediaQuery({
+  //   orientation: "portrait",
+  //   maxWidth: "500px",
+  // });
+
+  // useEffect(() => {
+  //   console.log("isPortrait", isPortrait);
+  // }, [isPortrait]);
+
+  // if (!isPortrait) {
+  //   return (
+  //     <div className={styles["rotate-device"]}>
+  //       <p>Please rotate your device</p>
+  //       <i className="bx bx-rotate-right"></i>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className={styles.wrapper}>

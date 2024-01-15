@@ -80,6 +80,29 @@ const deploymentSkills = [
   },
 ];
 
+const SkillItem = ({ skill }) => {
+  return (
+    <span>
+      {skill.icon && <i className={skill.icon}></i>}
+      {skill.img && <img src={skill.img} alt="" />}
+      {skill.name}
+    </span>
+  );
+};
+
+const SkillsContent = ({ title, skills }) => {
+  return (
+    <div className={styles["skills-content"]}>
+      <h3>{title}</h3>
+      <div className={styles["content"]}>
+        {skills.map((skill, index) => (
+          <SkillItem key={index} skill={skill} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 function MySkillsPage() {
   const { isMobile } = useNotebook();
 
@@ -89,31 +112,9 @@ function MySkillsPage() {
         My Skills <i className="bx bxl-visual-studio"></i>
       </Title>
       <div className={styles["skills-box"]}>
-        <div className={styles["skills-content"]}>
-          <h3>Back-end</h3>
-          <div className={styles["content"]}>
-            {backEndSkills.map((skill, index) => (
-              <span key={index}>
-                {skill.icon && <i className={skill.icon}></i>}
-                {skill.img && <img src={skill.img} alt="" />}
-                {skill.name}
-              </span>
-            ))}
-          </div>
-        </div>
+        <SkillsContent title={"Back End"} skills={backEndSkills} />
 
-        <div className={styles["skills-content"]}>
-          <h3>Deployment</h3>
-          <div className={styles["content"]}>
-            {deploymentSkills.map((skill, index) => (
-              <span key={index}>
-                {skill.icon && <i className={skill.icon}></i>}
-                {skill.img && <img src={skill.img} alt="" />}
-                {skill.name}
-              </span>
-            ))}
-          </div>
-        </div>
+        <SkillsContent title={"Deployment"} skills={deploymentSkills} />
       </div>
       {isMobile && <NextPrevButton />}
 

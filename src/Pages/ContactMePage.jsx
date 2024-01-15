@@ -1,4 +1,4 @@
-import GoToProfile from "../Components/GoToProfile/GoToProfile";
+import GoToProfile from "../Components/Buttons/GoToProfileButton";
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 
 import PageNumber from "../Components/PageNumber";
