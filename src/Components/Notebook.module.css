@@ -3,8 +3,22 @@
   width: 95vw;
   height: 95vh;
   perspective: 250rem;
-  animation: show-animate 2s forwards;
   overflow: hidden;
+  animation: show-animate 2s forwards;
+}
+
+@keyframes show-animate {
+  0%,
+  30% {
+    opacity: 0;
+    transform: rotate(-20deg);
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    scale: 1;
+  }
 }
 
 .cover {
@@ -16,4 +30,24 @@
   box-shadow: var(--box-shadow);
   border-bottom-left-radius: 0.6rem;
   border-bottom-right-radius: 0.6rem;
+}
+
+.back-cover {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  width: 95vw;
+  height: 95vh;
+  background: var(--cover-color);
+  border-radius: 0.6rem;
+  transform-origin: top;
+  transform-style: preserve-3d;
+  transition: transform 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.back-cover.turn {
+  z-index: 100;
+  transform: rotateX(180deg)
+    matrix3d(1, 0, 0, 0, 0.1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    translate3d(0, 0, 0);
 }

@@ -32,8 +32,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   background: transparent;
   border: var(--border);
   border-radius: 50%;
@@ -102,8 +102,8 @@
     font-size: 0.9rem;
   }
   .profile-page .social-media a {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2rem;
+    height: 2rem;
     font-size: 1rem;
   }
   .profile-page img {
@@ -134,6 +134,11 @@
     justify-content: space-evenly;
     margin-top: 1rem;
   }
+  .profile-page .social-media a {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.9rem;
+  }
   .btn {
     width: 7rem;
     height: 2.25rem;
@@ -145,8 +150,6 @@
 @media screen and (max-width: 500px) {
   .btn-box {
     margin-top: 2rem;
-    flex-direction: column;
-    gap: 0.75rem;
   }
   .profile-page h1 {
     font-size: 1.9rem;
