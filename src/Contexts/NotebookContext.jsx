@@ -12,8 +12,10 @@ function NotebookProvider({ children }) {
     query: "(max-width: 768px) and (min-height: 500px)",
   });
 
+  //TODO: Fix this media query
   const isRotatedMobile = useMediaQuery({
-    query: "(max-height: 768px) and (min-width: 500px)",
+    query:
+      "(max-height: 500px) and (min-width: 500px) and (orientation: landscape)",
   });
 
   const [currentPage, setCurrentPage] = useState(isMobile ? 1 : 4);
