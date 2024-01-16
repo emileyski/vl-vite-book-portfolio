@@ -8,41 +8,60 @@ import MyServicesPage from "../Pages/MyServicesPage";
 import MySkillsPage from "../Pages/MySkillsPage";
 import LatestProjectPage from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
+import { useEffect, useState } from "react";
+
 function Notebook() {
-  const { currentPage } = useNotebook(); //default value is 1
+  const { currentPage, scrollToFirstPage } = useNotebook(); //default value is 1
+  const [isTurned, setIsTurned] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsTurned(true);
+
+      scrollToFirstPage(500);
+    }, 2100);
+  }, []);
 
   return (
-    <div className={styles.wrapper}>
-      <div className={`${styles.cover}`}>
-        <NotebookPage>
-          <ProfilePage />
-        </NotebookPage>
+    <>
+      <div className={styles.wrapper}>
+        <div className={`${styles.cover}`}>
+          <NotebookPage>
+            <ProfilePage />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 2 ? false : true}>
-          <WorkExperience />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 2 ? false : true}>
+            <WorkExperience />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 3 ? false : true}>
-          <EducationPage />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 3 ? false : true}>
+            <EducationPage />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 4 ? false : true}>
-          <MyServicesPage />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 4 ? false : true}>
+            <MyServicesPage />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 5 ? false : true}>
-          <MySkillsPage />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 5 ? false : true}>
+            <MySkillsPage />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 6 ? false : true}>
-          <LatestProjectPage />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 6 ? false : true}>
+            <LatestProjectPage />
+          </NotebookPage>
 
-        <NotebookPage turnPage={currentPage >= 7 ? false : true}>
-          <ContactMePage />
-        </NotebookPage>
+          <NotebookPage turnPage={currentPage >= 7 ? false : true}>
+            <ContactMePage />
+          </NotebookPage>
+        </div>
+
+        <div
+          className={
+            styles["back-cover"] + (isTurned ? " " + styles["turn"] : "")
+          }
+        ></div>
       </div>
-    </div>
+    </>
   );
 }
 
