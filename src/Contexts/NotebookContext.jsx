@@ -18,7 +18,7 @@ function NotebookProvider({ children }) {
       "(max-height: 500px) and (min-width: 500px) and (orientation: landscape)",
   });
 
-  const [currentPage, setCurrentPage] = useState(isMobile ? 7 : 4);
+  const [currentPage, setCurrentPage] = useState(isMobile ? 1 : 4);
 
   useEffect(() => {
     console.log(isRotatedMobile);

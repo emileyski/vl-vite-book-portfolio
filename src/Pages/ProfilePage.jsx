@@ -3,13 +3,21 @@ import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./ProfilePage.module.css";
 
 function ProfilePage() {
-  const { isMobile, scrollToLastPage } = useNotebook();
+  const { isMobile, scrollToLastPage, scrollToFirstPage } = useNotebook();
 
   const handleDownloadCV = () => {
     window.open(
       "https://docs.google.com/document/d/1fwFzwE4qh19sbpyyjnU2xWUcwsRK7R1F360M0OX3DcA/edit",
       "_blank"
     );
+  };
+
+  const handleClick = () => {
+    if (isMobile) {
+      scrollToFirstPage(0);
+      return;
+    }
+    scrollToLastPage(0);
   };
 
   return (
@@ -40,7 +48,7 @@ function ProfilePage() {
         </button>
         <button
           className={`${styles["btn"]} ${styles["contact-me"]}`}
-          onClick={() => scrollToLastPage(0)}
+          onClick={handleClick}
         >
           Contact Me
         </button>
