@@ -1,7 +1,6 @@
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./LatestProjectPage.module.css";
 import Title from "../Components/Title";
-import Button from "../Components/Buttons/Button";
 import { useNotebook } from "../Contexts/NotebookContext";
 import PageNumber from "../Components/PageNumber";
 
@@ -33,8 +32,10 @@ function LatestProject() {
         </div>
 
         <div className={styles["btn-box"]}>
-          <Button>Source Code</Button>
-          <Button secondary>More Projects</Button>
+          <button className={styles["btn"]}>Source Code</button>
+          <button className={`${styles["btn"]} ${styles["secondary"]}`}>
+            More Projects
+          </button>
         </div>
       </div>
       <NextPrevButton />
