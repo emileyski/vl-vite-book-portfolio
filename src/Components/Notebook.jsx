@@ -8,18 +8,15 @@ import MyServicesPage from "../Pages/MyServicesPage";
 import MySkillsPage from "../Pages/MySkillsPage";
 import LatestProjectPage from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 function Notebook() {
-  const { currentPage, scrollToFirstPage } = useNotebook(); //default value is 1
-  const [isTurned, setIsTurned] = useState(false);
+  const { currentPage, scrollToLastPage } = useNotebook(); //default value is 1
 
   useEffect(() => {
     setTimeout(() => {
-      setIsTurned(true);
-
-      scrollToFirstPage(500);
-    }, 2100);
+      scrollToLastPage(500);
+    }, 500);
   }, []);
 
   return (
@@ -27,15 +24,15 @@ function Notebook() {
       <div className={styles.wrapper}>
         <div className={`${styles.cover}`}>
           <NotebookPage>
-            <ProfilePage />
+            <ContactMePage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 2 ? false : true}>
-            <WorkExperience />
+            <LatestProjectPage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 3 ? false : true}>
-            <EducationPage />
+            <MySkillsPage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 4 ? false : true}>
@@ -43,23 +40,23 @@ function Notebook() {
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 5 ? false : true}>
-            <MySkillsPage />
+            <EducationPage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 6 ? false : true}>
-            <LatestProjectPage />
+            <WorkExperience />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 7 ? false : true}>
-            <ContactMePage />
+            <ProfilePage />
           </NotebookPage>
         </div>
 
-        <div
+        {/* <div
           className={
             styles["back-cover"] + (isTurned ? " " + styles["turn"] : "")
           }
-        ></div>
+        ></div> */}
       </div>
     </>
   );
