@@ -1,5 +1,4 @@
 import { useNotebook } from "../Contexts/NotebookContext";
-import Button from "../Components/Buttons/Button";
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import PageNumber from "../Components/PageNumber";
 import Title from "../Components/Title";
@@ -11,14 +10,14 @@ function MysServiceItem({ icon = "bx bx-code-alt", title, content }) {
       <i className={icon}></i>
       <h3>{title}</h3>
       <p>{content}</p>
-      <Button
-        small
+      <button
+        className={styles["btn"]}
         onClick={() => {
           console.log("Read More");
         }}
       >
         Read More
-      </Button>
+      </button>
     </div>
   );
 }

@@ -51,7 +51,43 @@
 
 .portfolio-box .btn-box {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.btn {
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  height: 2.25rem;
+  background: var(--main-color);
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--white-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn.secondary:hover {
+  color: var(--white-color);
+  background: var(--main-color);
+}
+
+.btn:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 1050px) {
@@ -66,6 +102,11 @@
   }
   .portfolio-box .info-box .info-title a {
     font-size: 0.95rem;
+  }
+  .btn {
+    width: 7.5rem;
+    height: 2.25rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -82,6 +123,11 @@
   .portfolio-box .info-box .info-title a {
     font-size: 0.9rem;
   }
+  .btn {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 350px) and (min-height: 700px) {
@@ -89,13 +135,18 @@
     height: 13rem;
   }
   .portfolio-box .info-box .info-title h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .portfolio-box .info-box p {
     font-size: 1.1rem;
   }
   .portfolio-box .info-box .info-title a {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+  .btn {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -104,27 +155,37 @@
     height: 14rem;
   }
   .portfolio-box .info-box .info-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .portfolio-box .info-box p {
     font-size: 1.2rem;
   }
   .portfolio-box .info-box .info-title a {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+  .btn {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (min-width: 390px) and (min-height: 840px) {
+@media screen and (min-width: 390px) and (min-height: 850px) {
   .portfolio-box .img-box {
     height: 15rem;
   }
   .portfolio-box .info-box .info-title h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .portfolio-box .info-box p {
     font-size: 1.3rem;
   }
   .portfolio-box .info-box .info-title a {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+  }
+  .btn {
+    width: 8.5rem;
+    height: 2.75rem;
+    font-size: 0.925rem;
   }
 }
