@@ -38,9 +38,10 @@
   color: var(--white-color);
   margin: 0 1rem;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 350px) and (min-height: 700px) {
+@media screen and (min-width: 350px) and (max-width: 768px) and (min-height: 700px) {
   .contact-box {
     padding: 2rem 0rem;
   }

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import styles from "./Book.module.css";
 import ProfilePage from "../Pages/ProfilePage";
 import BookPage from "./BookPage";

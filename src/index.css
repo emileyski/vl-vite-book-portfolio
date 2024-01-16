@@ -19,6 +19,7 @@
   border: none;
   outline: none;
   font-family: "Poppins", sans-serif;
+  orientation: portrait;
 }
 
 body {
@@ -28,9 +29,5 @@ body {
   height: 100dvh;
   background: var(--bg-color);
   color: var(--text-color);
-  overflow: hidden;
-}
-
-#root {
   overflow: hidden;
 }

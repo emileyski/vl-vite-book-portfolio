@@ -1,5 +1,5 @@
 import { useNotebook } from "../../Contexts/NotebookContext";
-import styles from "./GoToProfile.module.css";
+import styles from "./GoToProfileButton.module.css";
 
 function GoToProfile() {
   const { scrollToFirstPage } = useNotebook();

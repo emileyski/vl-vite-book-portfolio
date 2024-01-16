@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./BookPage.module.css";
 import { useEffect, useRef } from "react";
 

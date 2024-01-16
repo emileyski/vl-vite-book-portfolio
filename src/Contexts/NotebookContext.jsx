@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
@@ -8,9 +8,20 @@ const NotebookContext = createContext();
 const pagesCount = 7;
 
 function NotebookProvider({ children }) {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px) and (min-height: 500px)",
+  });
+
+  const isRotatedMobile = useMediaQuery({
+    query: "(max-height: 768px) and (min-width: 500px)",
+  });
 
   const [currentPage, setCurrentPage] = useState(isMobile ? 1 : 4);
+
+  useEffect(() => {
+    console.log(isRotatedMobile);
+    console.log(screen.orientation.type);
+  }, []);
 
   const setCurrentPageWrapper = (pageNumber) => {
     if (pageNumber < 1 || pageNumber > pagesCount) {
@@ -58,6 +69,7 @@ function NotebookProvider({ children }) {
         setCurrentPage,
         pagesCount,
         isMobile,
+        isRotatedMobile,
         scrollToFirstPage,
         scrollToLastPage,
       }}

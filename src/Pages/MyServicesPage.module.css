@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (min-width: 350px) and (min-height: 650px) {
+@media screen and (min-width: 350px) and (max-width: 768px) and (min-height: 650px) {
   .services-content {
     padding: 0.6rem 0.25rem 0.6rem;
   }
@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (min-width: 350px) and (min-height: 700px) {
+@media screen and (min-width: 350px) and (max-width: 768px) and (min-height: 700px) {
   .services-box {
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@
   }
 }
 
-@media screen and (min-width: 375px) and (min-height: 800px) {
+@media screen and (min-width: 375px) and (max-width: 768px) and (min-height: 800px) {
   .services-content i {
     font-size: 1.9rem;
     /* display: block; */

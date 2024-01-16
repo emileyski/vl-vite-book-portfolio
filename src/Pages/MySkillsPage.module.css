@@ -33,6 +33,7 @@
   font-weight: 500;
   transition: 0.3s ease;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .skills-content .content span:hover {
@@ -138,7 +139,7 @@
   .skills-content .content span {
     flex: 1 1 6rem;
     max-width: 6rem;
-    height: 5rem;
+    height: 4.75rem;
     font-size: 0.9rem;
   }
   .skills-content .content span i {
@@ -147,5 +148,22 @@
   .skills-content .content span img {
     width: 2.5rem;
     height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (min-height: 812px) {
+  .skills-box {
+    gap: 1.75rem;
+  }
+  .skills-content .content span {
+    height: 5.25rem;
+    font-size: 1rem;
+  }
+  .skills-content .content span i {
+    font-size: 2.75rem;
+  }
+  .skills-content .content span img {
+    width: 2.75rem;
+    height: 2.75rem;
   }
 }

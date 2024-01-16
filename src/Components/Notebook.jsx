@@ -8,7 +8,6 @@ import MyServicesPage from "../Pages/MyServicesPage";
 import MySkillsPage from "../Pages/MySkillsPage";
 import LatestProjectPage from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
-
 function Notebook() {
   const { currentPage } = useNotebook(); //default value is 1
 
