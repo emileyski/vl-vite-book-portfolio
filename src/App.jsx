@@ -1,10 +1,14 @@
 import BookWrapper from "./Components/BookWrapper";
-import { useMediaQuery } from "react-responsive";
 import { NotebookProvider, useNotebook } from "./Contexts/NotebookContext";
 import Notebook from "./Components/Notebook";
+import RotationErrorMessage from "./Components/RotationErrorMessage";
 
 function App() {
-  const { isMobile } = useNotebook();
+  const { isMobile, isRotatedMobile } = useNotebook();
+
+  if (isRotatedMobile) {
+    return <RotationErrorMessage />;
+  }
 
   return (
     <NotebookProvider>

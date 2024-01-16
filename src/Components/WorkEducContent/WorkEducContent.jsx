@@ -1,4 +1,5 @@
 import styles from "./WorkEducContent.module.css";
+/* eslint-disable react/prop-types */
 
 function WorkEducContent({ title, year, content }) {
   return (

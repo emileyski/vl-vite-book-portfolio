@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./MySkillsPage.module.css";
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import Title from "../Components/Title";
