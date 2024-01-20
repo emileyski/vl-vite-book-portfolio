@@ -169,4 +169,7 @@
   .profile-page img {
     max-width: 150px;
   }
+  .btn-box {
+    margin-top: 0.6rem;
+  }
 }

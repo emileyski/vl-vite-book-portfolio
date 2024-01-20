@@ -1,6 +1,6 @@
 .notebook-page {
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 2rem;
   left: 2rem;
   bottom: 2rem;
@@ -11,12 +11,37 @@
   transform-style: preserve-3d;
   transform-origin: top;
   transition: transform 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: show-animate-reversed 1.25s forwards;
 }
 
 .notebook-page.turn {
   transform: rotateX(180deg)
     matrix3d(1, 0, 0, 0, 0.1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
     translate3d(0, 0, 0);
+  animation: show-animate 1.25s forwards;
+}
+
+@keyframes show-animate {
+  0%,
+  37.5% {
+    opacity: 1;
+  }
+  /* 41%, */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show-animate-reversed {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  /* 41%, */
+  40%,
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
