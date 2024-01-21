@@ -22,21 +22,21 @@ const Book = () => {
         pageNumber={1}
         currentPage={currentPage}
         frontContent={<WorkExperience />}
-        backContent={<EducationPage />}
+        backContent={<MySkillsFirstPage />}
       />
       <BookPage
         turnPage={currentPage >= 3}
         pageNumber={3}
         currentPage={currentPage}
-        frontContent={<MySkillsFirstPage />}
-        backContent={<MySkillsSecondPage />}
+        frontContent={<MySkillsSecondPage />}
+        backContent={<LatestProject />}
       />
 
       <BookPage
         turnPage={currentPage >= 4}
         pageNumber={4}
         currentPage={currentPage}
-        frontContent={<LatestProject />}
+        frontContent={<EducationPage />}
         backContent={<ContactMePage />}
       />
     </div>

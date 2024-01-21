@@ -38,10 +38,10 @@ function LatestProject() {
           </button>
         </div>
       </div>
-      <NextPrevButton />
+      <NextPrevButton isNext={false} />
 
-      {isMobile && <NextPrevButton isNext={false} />}
-      <PageNumber number={5} />
+      {isMobile && <NextPrevButton />}
+      <PageNumber number={4} />
     </div>
   );
 }

@@ -21,7 +21,8 @@ const protocols = [
   //     img: "skill-icons/brand-websocket-svgrepo-com.svg",
   //   },
   {
-    name: "Socket.io",
+    name: "WebSockets",
+    smallText: true,
     img: "skill-icons/socket-io-svgrepo-com.svg",
   },
   {
@@ -93,10 +94,10 @@ const MySkillsSecondPage = () => {
 
         <SkillsContent title={"Design"} skills={design} />
       </SkillsBox>
-      {isMobile && <NextPrevButton />}
+      {isMobile && <NextPrevButton isNext={false} />}
 
-      <NextPrevButton isNext={false} />
-      <PageNumber number={4} />
+      <NextPrevButton />
+      <PageNumber number={3} />
     </div>
   );
 };

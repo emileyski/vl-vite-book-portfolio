@@ -31,8 +31,8 @@ const backend = [
   },
   {
     name: "Express",
-    icon: "bx bx-coffee",
-    img: null,
+    // icon: "bx bx-coffee",
+    img: "skill-icons/express-svgrepo-com.svg",
   },
   {
     name: "Nest",
@@ -102,10 +102,10 @@ function MySkillsFirstPage() {
         <SkillsContent title={"Databases"} skills={databases} />
       </SkillsBox>
 
-      {isMobile && <NextPrevButton isNext={false} />}
+      {isMobile && <NextPrevButton />}
 
-      <NextPrevButton />
-      <PageNumber number={3} />
+      <NextPrevButton isNext={false} />
+      <PageNumber number={2} />
     </div>
   );
 }

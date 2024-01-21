@@ -29,20 +29,26 @@ function Notebook() {
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 2 ? false : true}>
-            <LatestProjectPage />
+            <EducationPage />
+
+            {/* <LatestProjectPage /> */}
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 3 ? false : true}>
-            <MySkillsSecondPage />
+            <LatestProjectPage />
+
+            {/* <MySkillsSecondPage /> */}
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 4 ? false : true}>
-            <MySkillsFirstPage />
+            <MySkillsSecondPage />
+            {/* <MySkillsFirstPage /> */}
             {/* <MyServicesPage /> */}
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 5 ? false : true}>
-            <EducationPage />
+            {/* <EducationPage /> */}
+            <MySkillsFirstPage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 6 ? false : true}>

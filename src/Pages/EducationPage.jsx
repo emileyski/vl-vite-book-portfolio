@@ -45,9 +45,9 @@ function EducationPage() {
           />
         </WorkEducBox>
       ))}
-      {isMobile && <NextPrevButton />}
-      <NextPrevButton isNext={false} />
-      <PageNumber number={2} />
+      {isMobile && <NextPrevButton isNext={false} />}
+      <NextPrevButton />
+      <PageNumber number={5} />
     </>
   );
 }
