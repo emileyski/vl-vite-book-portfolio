@@ -4,10 +4,12 @@ import BookPage from "./BookPage";
 import WorkExperience from "../Pages/WorkExperience";
 import { useNotebook } from "../Contexts/NotebookContext";
 import EducationPage from "../Pages/EducationPage";
-import MyServicesPage from "../Pages/MyServicesPage";
-import MySkillsPage from "../Pages/MySkillsPage";
+// import MyServicesPage from "../Pages/MyServicesPage";
+
 import LatestProject from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
+import MySkillsFirstPage from "../Pages/MySkillsFirstPage";
+import MySkillsSecondPage from "../Pages/MySkillsSecondPage";
 
 const Book = () => {
   const { currentPage } = useNotebook();
@@ -26,8 +28,8 @@ const Book = () => {
         turnPage={currentPage >= 3}
         pageNumber={3}
         currentPage={currentPage}
-        frontContent={<MyServicesPage />}
-        backContent={<MySkillsPage />}
+        frontContent={<MySkillsFirstPage />}
+        backContent={<MySkillsSecondPage />}
       />
 
       <BookPage

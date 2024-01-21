@@ -4,11 +4,12 @@ import styles from "./Notebook.module.css";
 import { useNotebook } from "../Contexts/NotebookContext";
 import WorkExperience from "../Pages/WorkExperience";
 import EducationPage from "../Pages/EducationPage";
-import MyServicesPage from "../Pages/MyServicesPage";
-import MySkillsPage from "../Pages/MySkillsPage";
+// import MyServicesPage from "../Pages/MyServicesPage";
 import LatestProjectPage from "../Pages/LatestProjectPage";
 import ContactMePage from "../Pages/ContactMePage";
 import { useEffect } from "react";
+import MySkillsSecondPage from "../Pages/MySkillsSecondPage";
+import MySkillsFirstPage from "../Pages/MySkillsFirstPage";
 
 function Notebook() {
   const { currentPage, scrollToLastPage } = useNotebook(); //default value is 1
@@ -32,11 +33,12 @@ function Notebook() {
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 3 ? false : true}>
-            <MySkillsPage />
+            <MySkillsSecondPage />
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 4 ? false : true}>
-            <MyServicesPage />
+            <MySkillsFirstPage />
+            {/* <MyServicesPage /> */}
           </NotebookPage>
 
           <NotebookPage turnPage={currentPage >= 5 ? false : true}>

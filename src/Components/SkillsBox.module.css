@@ -1,0 +1,35 @@
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .skills-box {
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .skills-box {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .skills-box {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (min-height: 750px) {
+  .skills-box {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (min-height: 812px) {
+  .skills-box {
+    gap: 1.75rem;
+  }
+}
