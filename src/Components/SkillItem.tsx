@@ -7,7 +7,12 @@ const SkillItem = ({ skill }) => {
   return (
     <span className={skill.smallText ? styles["small-text"] : ""}>
       {skill.icon && <i className={skill.icon}></i>}
-      {skill.img && <img src={skill.img} alt="" />}
+      {skill.img && !skill.bigIcon && <img src={skill.img} alt="" />}
+      {skill.img && skill.bigIcon && (
+        <div className={styles["big-icon"]}>
+          <img src={skill.img} alt="" />
+        </div>
+      )}
       {skill.name}
     </span>
   );

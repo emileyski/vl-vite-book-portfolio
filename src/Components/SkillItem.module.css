@@ -2,9 +2,32 @@
   font-size: 0.65rem !important;
 }
 
+.big-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  position: relative;
+}
+
+.big-icon img {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  margin-left: -0.5rem !important;
+  /* position: absolute; */
+}
+
 @media screen and (max-width: 1100px) {
   .small-text {
     font-size: 0.6rem !important;
+  }
+  .big-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .big-icon img {
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-left: -0.5rem !important;
+    /* position: absolute; */
   }
 }
 
@@ -12,10 +35,30 @@
   .small-text {
     font-size: 0.75rem !important;
   }
+  .big-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .big-icon img {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    margin-left: -0.5rem !important;
+    /* position: absolute; */
+  }
 }
 
 @media screen and (min-width: 400px) and (min-height: 812px) {
   .small-text {
     font-size: 0.8rem !important;
+  }
+  .big-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .big-icon img {
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    margin-left: -0.5rem !important;
+    /* position: absolute; */
   }
 }

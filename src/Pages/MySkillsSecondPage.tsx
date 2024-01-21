@@ -31,6 +31,7 @@ const protocols = [
   },
   {
     name: "gRPC",
+    bigIcon: true,
     img: "skill-icons/grpc-icon.svg",
   },
   {
