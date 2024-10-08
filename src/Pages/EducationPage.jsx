@@ -47,7 +47,7 @@ function EducationPage() {
       ))}
       {isMobile && <NextPrevButton isNext={false} />}
       <NextPrevButton />
-      <PageNumber number={5} />
+      <PageNumber number={6} />
     </>
   );
 }

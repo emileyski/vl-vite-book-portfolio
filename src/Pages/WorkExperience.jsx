@@ -34,7 +34,7 @@ function WorkExperience() {
 
       <NextPrevButton />
       {isMobile && <NextPrevButton isNext={false} />}
-      <PageNumber number={1} />
+      <PageNumber number={2} />
     </>
   );
 }

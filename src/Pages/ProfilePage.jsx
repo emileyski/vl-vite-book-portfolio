@@ -1,16 +1,17 @@
 import { useNotebook } from "../Contexts/NotebookContext";
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./ProfilePage.module.css";
+import PageNumber from "../Components/PageNumber";
 
 function ProfilePage() {
   const { isMobile, scrollToLastPage, scrollToFirstPage } = useNotebook();
 
-  const handleDownloadCV = () => {
-    window.open(
-      "https://docs.google.com/document/d/1fwFzwE4qh19sbpyyjnU2xWUcwsRK7R1F360M0OX3DcA/edit",
-      "_blank"
-    );
-  };
+  // const handleDownloadCV = () => {
+  //   window.open(
+  //     "https://docs.google.com/document/d/1fwFzwE4qh19sbpyyjnU2xWUcwsRK7R1F360M0OX3DcA/edit",
+  //     "_blank"
+  //   );
+  // };
 
   const handleClick = () => {
     if (isMobile) {
@@ -43,9 +44,9 @@ function ProfilePage() {
       </p>
 
       <div className={styles["btn-box"]}>
-        <button href="" className={styles["btn"]} onClick={handleDownloadCV}>
+        {/* <button href="" className={styles["btn"]} onClick={handleDownloadCV}>
           Download CV
-        </button>
+        </button> */}
         <button
           className={`${styles["btn"]} ${styles["contact-me"]}`}
           onClick={handleClick}
@@ -53,7 +54,8 @@ function ProfilePage() {
           Contact Me
         </button>
       </div>
-      {isMobile && <NextPrevButton />}
+      {isMobile && <NextPrevButton isNext={true} />}
+      <PageNumber number={1}/>
     </div>
   );
 }

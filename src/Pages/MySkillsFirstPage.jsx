@@ -105,7 +105,7 @@ function MySkillsFirstPage() {
       {isMobile && <NextPrevButton />}
 
       <NextPrevButton isNext={false} />
-      <PageNumber number={2} />
+      <PageNumber number={3} />
     </div>
   );
 }

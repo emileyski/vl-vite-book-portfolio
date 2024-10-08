@@ -55,7 +55,7 @@ function ContactMePage() {
       <NextPrevButton isNext={false} />
       <GoToProfile />
 
-      <PageNumber number={6} />
+      <PageNumber number={7} />
     </>
   );
 }

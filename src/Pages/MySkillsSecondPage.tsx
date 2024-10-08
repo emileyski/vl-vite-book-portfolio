@@ -98,7 +98,7 @@ const MySkillsSecondPage = () => {
       {isMobile && <NextPrevButton isNext={false} />}
 
       <NextPrevButton />
-      <PageNumber number={3} />
+      <PageNumber number={4} />
     </div>
   );
 };

@@ -24,7 +24,7 @@ function LatestProject() {
             </a>
           </div>
           <p>Tech used:</p>
-          <p>
+          <p style={{fontSize: '16px'}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             magni fugit saepe enim? Provident, ad ea voluptatibus molestias
             aliquid reiciendis.
@@ -41,7 +41,7 @@ function LatestProject() {
       <NextPrevButton isNext={false} />
 
       {isMobile && <NextPrevButton />}
-      <PageNumber number={4} />
+      <PageNumber number={5} />
     </div>
   );
 }
