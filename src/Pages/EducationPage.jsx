@@ -7,22 +7,10 @@ import PageNumber from "../Components/PageNumber";
 
 const educationInfo = [
   {
-    year: "2020 - 2021",
-    title: "Web Developer - Company",
+    year: "2019 - 2023",
+    title: "National Technical University of Ukraine",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic.",
-  },
-  {
-    year: "2020 - 2021",
-    title: "Web Developer - Company",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic.",
-  },
-  {
-    year: "2020 - 2021",
-    title: "Web Developer - Company",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic.",
+      `The National Technical University of Ukraine specializes in algorithms, distributed systems and back-end architecture, applying modern technologies to develop scalable solutions.`,
   },
 ];
 
@@ -47,7 +35,7 @@ function EducationPage() {
       ))}
       {isMobile && <NextPrevButton isNext={false} />}
       <NextPrevButton />
-      <PageNumber number={5} />
+      <PageNumber number={6} />
     </>
   );
 }

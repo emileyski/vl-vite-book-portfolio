@@ -1,16 +1,17 @@
 import { useNotebook } from "../Contexts/NotebookContext";
 import NextPrevButton from "../Components/Buttons/NextPrevButton";
 import styles from "./ProfilePage.module.css";
+import PageNumber from "../Components/PageNumber";
 
 function ProfilePage() {
   const { isMobile, scrollToLastPage, scrollToFirstPage } = useNotebook();
 
-  const handleDownloadCV = () => {
-    window.open(
-      "https://docs.google.com/document/d/1fwFzwE4qh19sbpyyjnU2xWUcwsRK7R1F360M0OX3DcA/edit",
-      "_blank"
-    );
-  };
+  // const handleDownloadCV = () => {
+  //   window.open(
+  //     "https://docs.google.com/document/d/1fwFzwE4qh19sbpyyjnU2xWUcwsRK7R1F360M0OX3DcA/edit",
+  //     "_blank"
+  //   );
+  // };
 
   const handleClick = () => {
     if (isMobile) {
@@ -22,9 +23,9 @@ function ProfilePage() {
 
   return (
     <div className={styles["profile-page"]}>
-      <img src="profile.jpeg" alt="profile" />
+      <img src="profile-14-10.jpg" alt="profile" />
       <h1>Vladyslav Braslavskyi</h1>
-      <h3>Backend Developer</h3>
+      <h3>Senior Backend Engineer</h3>
       <div className={styles["social-media"]}>
         <a href="https://github.com/vlbras">
           <i className="bx bxl-github"></i>
@@ -38,14 +39,14 @@ function ProfilePage() {
       </div>
 
       <p>
-        I'm a Backend Developer with 3 years of work experience. My passion is
+        I'm a Senior Backend Engineer with 5 years of commercial experience. My passion is
         crafting innovative and user-friendly apps for various platforms.
       </p>
 
       <div className={styles["btn-box"]}>
-        <button href="" className={styles["btn"]} onClick={handleDownloadCV}>
+        {/* <button href="" className={styles["btn"]} onClick={handleDownloadCV}>
           Download CV
-        </button>
+        </button> */}
         <button
           className={`${styles["btn"]} ${styles["contact-me"]}`}
           onClick={handleClick}
@@ -53,7 +54,8 @@ function ProfilePage() {
           Contact Me
         </button>
       </div>
-      {isMobile && <NextPrevButton />}
+      {isMobile && <NextPrevButton isNext={true} />}
+      <PageNumber number={1}/>
     </div>
   );
 }

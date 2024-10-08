@@ -14,34 +14,36 @@ function LatestProject() {
       </Title>
       <div className={styles["portfolio-box"]}>
         <div className={styles["img-box"]}>
-          <img src="project.jpeg" alt="" />
+          <img src="ddd.png" alt="" />
         </div>
         <div className={styles["info-box"]}>
           <div className={styles["info-title"]}>
-            <h3>Project Name</h3>
-            <a href="">
+            <h3>NestJS Advanced Architectures</h3>
+            {/* <a href="">
               Live preview <i className="bx bx-link-external"></i>
-            </a>
+            </a> */}
           </div>
-          <p>Tech used:</p>
+          {/* <p>Tech used:</p> */}
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            magni fugit saepe enim? Provident, ad ea voluptatibus molestias
-            aliquid reiciendis.
+          NestJS project that utilizes modern design patterns such as Clean Architecture, Domain-Driven Design, Event-Driven Architecture, Selective Event Sourcing and Command and Query Responsibility Segregation.
           </p>
         </div>
 
         <div className={styles["btn-box"]}>
-          <button className={styles["btn"]}>Source Code</button>
-          <button className={`${styles["btn"]} ${styles["secondary"]}`}>
-            More Projects
-          </button>
+          <a href="https://github.com/vlbras/nestjs-cqrs-ddd-event-sourcing" target="_blank" rel="noopener noreferrer">
+            <button className={styles["btn"]}>Source Code</button>
+          </a>
+          <a href="https://github.com/vlbras" target="_blank" rel="noopener noreferrer">
+            <button className={`${styles["btn"]} ${styles["secondary"]}`}>
+              More Projects
+            </button>
+          </a>
         </div>
       </div>
       <NextPrevButton isNext={false} />
 
       {isMobile && <NextPrevButton />}
-      <PageNumber number={4} />
+      <PageNumber number={5} />
     </div>
   );
 }

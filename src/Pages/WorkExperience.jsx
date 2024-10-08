@@ -16,25 +16,30 @@ function WorkExperience() {
 
       <WorkEducBox>
         <WorkEducContent
-          title="Web Developer - Company"
-          year="2020 - 2021"
-          content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic."
+          title="Senior Backend Engineer - Flip"
+          year="2024 - Present"
+          content={`• Implemented a combination of Orchestration and Choreography approaches, reducing transaction failures by 65%<br>
+• Divided large domain into CQRS microservices, enhancing query performance by 55%
+	and lowering peak hour load by 20%
+`}
         />
         <WorkEducContent
-          title="Web Developer - Company"
-          year="2020 - 2021"
-          content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic."
+          title="Backend Engineer - WNET"
+          year="2022 - 2024"
+          content="• Integrated Domain-Driven Design, cutting new feature development time by 25%<br>
+• Adopted caching mechanisms that speed up application response times by up to 70%"
         />
         <WorkEducContent
-          title="Web Developer - Company"
-          year="2020 - 2021"
-          content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat odio eos assumenda consectetur, numquam officiis dicta fuga consequuntur possimus harum fugiat vel nemo? Ab, hic."
+          title="Software Engineer - WeblancerNet"
+          year="2019 - 2022"
+          content="• Engineered Role-Based Access Control and Access Control Lists, enhancing access management<br>
+• Identified and applied code refactoring opportunities, reducing code volume by 35%"
         />
       </WorkEducBox>
 
       <NextPrevButton />
       {isMobile && <NextPrevButton isNext={false} />}
-      <PageNumber number={1} />
+      <PageNumber number={2} />
     </>
   );
 }
